@@ -41,8 +41,8 @@ jobs:
     #       password: ${{ secrets.GITHUB_TOKEN }}
 
       # Pull the github input image or use the default
-      - name: Pull the image
-        run: docker pull ${{ github.event.inputs.docker_image }}
+      # - name: Pull the image
+      #   run: docker pull ${{ github.event.inputs.docker_image }}
 
       - name: Docker Scout
         uses: docker/scout-action@v1
